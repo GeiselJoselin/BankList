@@ -2,18 +2,17 @@
 //  ViewController.swift
 //  BankListApp
 //
-//  Created by Emi Mtz on 11/11/23.
+//  Created by Geisel Roque on 11/11/23.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class VmiewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+    view.backgroundColor = .red
   }
-
-
 }
 

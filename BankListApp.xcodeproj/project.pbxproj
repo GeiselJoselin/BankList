@@ -10,12 +10,23 @@
 		774B12582AFFF8B600E40909 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12572AFFF8B600E40909 /* AppDelegate.swift */; };
 		774B125A2AFFF8B600E40909 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12592AFFF8B600E40909 /* SceneDelegate.swift */; };
 		774B125C2AFFF8B600E40909 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B125B2AFFF8B600E40909 /* ViewController.swift */; };
-		774B125F2AFFF8B600E40909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774B125D2AFFF8B600E40909 /* Main.storyboard */; };
 		774B12612AFFF8B900E40909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 774B12602AFFF8B900E40909 /* Assets.xcassets */; };
 		774B12642AFFF8B900E40909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 774B12622AFFF8B900E40909 /* LaunchScreen.storyboard */; };
 		774B126F2AFFF8B900E40909 /* BankListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B126E2AFFF8B900E40909 /* BankListAppTests.swift */; };
 		774B12792AFFF8B900E40909 /* BankListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12782AFFF8B900E40909 /* BankListAppUITests.swift */; };
 		774B127B2AFFF8B900E40909 /* BankListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B127A2AFFF8B900E40909 /* BankListAppUITestsLaunchTests.swift */; };
+		774B12892AFFFA0D00E40909 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12882AFFFA0D00E40909 /* NetworkManager.swift */; };
+		774B128B2AFFFA5B00E40909 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B128A2AFFFA5B00E40909 /* Response.swift */; };
+		774B128D2AFFFA8000E40909 /* WebRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B128C2AFFFA8000E40909 /* WebRequests.swift */; };
+		774B12902AFFFB5A00E40909 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B128F2AFFFB5A00E40909 /* NetworkConnection.swift */; };
+		774B12922AFFFB7100E40909 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12912AFFFB7100E40909 /* Enums.swift */; };
+		774B12972AFFFE0100E40909 /* BanksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12962AFFFE0100E40909 /* BanksListViewController.swift */; };
+		774B12992AFFFE0900E40909 /* BanksListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12982AFFFE0900E40909 /* BanksListViewModel.swift */; };
+		774B129B2AFFFE2F00E40909 /* BanksListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B129A2AFFFE2F00E40909 /* BanksListModel.swift */; };
+		774B129E2B0004C200E40909 /* BanksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B129D2B0004C200E40909 /* BanksCell.swift */; };
+		774B12A12B00074D00E40909 /* BanksListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12A02B00074D00E40909 /* BanksListApiService.swift */; };
+		774B12A42B00081900E40909 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12A32B00081900E40909 /* Constants.swift */; };
+		774B12A62B00192100E40909 /* BankListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774B12A52B00192100E40909 /* BankListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +51,6 @@
 		774B12572AFFF8B600E40909 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		774B12592AFFF8B600E40909 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		774B125B2AFFF8B600E40909 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		774B125E2AFFF8B600E40909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		774B12602AFFF8B900E40909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		774B12632AFFF8B900E40909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		774B12652AFFF8B900E40909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		774B12742AFFF8B900E40909 /* BankListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774B12782AFFF8B900E40909 /* BankListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListAppUITests.swift; sourceTree = "<group>"; };
 		774B127A2AFFF8B900E40909 /* BankListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		774B12882AFFFA0D00E40909 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		774B128A2AFFFA5B00E40909 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		774B128C2AFFFA8000E40909 /* WebRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequests.swift; sourceTree = "<group>"; };
+		774B128F2AFFFB5A00E40909 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		774B12912AFFFB7100E40909 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		774B12962AFFFE0100E40909 /* BanksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewController.swift; sourceTree = "<group>"; };
+		774B12982AFFFE0900E40909 /* BanksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListViewModel.swift; sourceTree = "<group>"; };
+		774B129A2AFFFE2F00E40909 /* BanksListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListModel.swift; sourceTree = "<group>"; };
+		774B129D2B0004C200E40909 /* BanksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksCell.swift; sourceTree = "<group>"; };
+		774B12A02B00074D00E40909 /* BanksListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanksListApiService.swift; sourceTree = "<group>"; };
+		774B12A32B00081900E40909 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		774B12A52B00192100E40909 /* BankListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +121,15 @@
 		774B12562AFFF8B600E40909 /* BankListApp */ = {
 			isa = PBXGroup;
 			children = (
+				774B12952AFFFDD000E40909 /* BanksListModule */,
+				774B128E2AFFFB2900E40909 /* Common */,
+				774B12872AFFF9EF00E40909 /* NetworkManager */,
 				774B12572AFFF8B600E40909 /* AppDelegate.swift */,
+				774B12602AFFF8B900E40909 /* Assets.xcassets */,
+				774B12652AFFF8B900E40909 /* Info.plist */,
+				774B12622AFFF8B900E40909 /* LaunchScreen.storyboard */,
 				774B12592AFFF8B600E40909 /* SceneDelegate.swift */,
 				774B125B2AFFF8B600E40909 /* ViewController.swift */,
-				774B125D2AFFF8B600E40909 /* Main.storyboard */,
-				774B12602AFFF8B900E40909 /* Assets.xcassets */,
-				774B12622AFFF8B900E40909 /* LaunchScreen.storyboard */,
-				774B12652AFFF8B900E40909 /* Info.plist */,
 			);
 			path = BankListApp;
 			sourceTree = "<group>";
@@ -114,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				774B126E2AFFF8B900E40909 /* BankListAppTests.swift */,
+				774B12A52B00192100E40909 /* BankListTests.swift */,
 			);
 			path = BankListAppTests;
 			sourceTree = "<group>";
@@ -125,6 +150,46 @@
 				774B127A2AFFF8B900E40909 /* BankListAppUITestsLaunchTests.swift */,
 			);
 			path = BankListAppUITests;
+			sourceTree = "<group>";
+		};
+		774B12872AFFF9EF00E40909 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				774B12882AFFFA0D00E40909 /* NetworkManager.swift */,
+				774B128A2AFFFA5B00E40909 /* Response.swift */,
+				774B128C2AFFFA8000E40909 /* WebRequests.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		774B128E2AFFFB2900E40909 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				774B128F2AFFFB5A00E40909 /* NetworkConnection.swift */,
+				774B12912AFFFB7100E40909 /* Enums.swift */,
+				774B12A32B00081900E40909 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		774B12952AFFFDD000E40909 /* BanksListModule */ = {
+			isa = PBXGroup;
+			children = (
+				774B129C2B0004B300E40909 /* Cell */,
+				774B12962AFFFE0100E40909 /* BanksListViewController.swift */,
+				774B12982AFFFE0900E40909 /* BanksListViewModel.swift */,
+				774B129A2AFFFE2F00E40909 /* BanksListModel.swift */,
+				774B12A02B00074D00E40909 /* BanksListApiService.swift */,
+			);
+			path = BanksListModule;
+			sourceTree = "<group>";
+		};
+		774B129C2B0004B300E40909 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				774B129D2B0004C200E40909 /* BanksCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +298,6 @@
 			files = (
 				774B12642AFFF8B900E40909 /* LaunchScreen.storyboard in Resources */,
 				774B12612AFFF8B900E40909 /* Assets.xcassets in Resources */,
-				774B125F2AFFF8B600E40909 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +322,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774B12992AFFFE0900E40909 /* BanksListViewModel.swift in Sources */,
+				774B128D2AFFFA8000E40909 /* WebRequests.swift in Sources */,
+				774B12892AFFFA0D00E40909 /* NetworkManager.swift in Sources */,
 				774B125C2AFFF8B600E40909 /* ViewController.swift in Sources */,
 				774B12582AFFF8B600E40909 /* AppDelegate.swift in Sources */,
+				774B12902AFFFB5A00E40909 /* NetworkConnection.swift in Sources */,
+				774B12972AFFFE0100E40909 /* BanksListViewController.swift in Sources */,
+				774B129B2AFFFE2F00E40909 /* BanksListModel.swift in Sources */,
+				774B12A12B00074D00E40909 /* BanksListApiService.swift in Sources */,
 				774B125A2AFFF8B600E40909 /* SceneDelegate.swift in Sources */,
+				774B129E2B0004C200E40909 /* BanksCell.swift in Sources */,
+				774B12A42B00081900E40909 /* Constants.swift in Sources */,
+				774B12922AFFFB7100E40909 /* Enums.swift in Sources */,
+				774B128B2AFFFA5B00E40909 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				774B126F2AFFF8B900E40909 /* BankListAppTests.swift in Sources */,
+				774B12A62B00192100E40909 /* BankListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		774B125D2AFFF8B600E40909 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				774B125E2AFFF8B600E40909 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		774B12622AFFF8B900E40909 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,9 +510,9 @@
 				INFOPLIST_FILE = BankListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,9 +538,9 @@
 				INFOPLIST_FILE = BankListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

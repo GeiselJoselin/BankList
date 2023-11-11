@@ -2,7 +2,7 @@
 //  BankListAppTests.swift
 //  BankListAppTests
 //
-//  Created by Emi Mtz on 11/11/23.
+//  Created by Geisel Roque on 11/11/23.
 //
 
 import XCTest

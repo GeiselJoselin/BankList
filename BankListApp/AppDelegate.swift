@@ -2,18 +2,22 @@
 //  AppDelegate.swift
 //  BankListApp
 //
-//  Created by Emi Mtz on 11/11/23.
+//  Created by Geisel Roque on 11/11/23.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+  var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    window = UIWindow(frame: UIScreen.main.bounds)
+    let banksListVC = BanksListViewController()
+    let navigationController = UINavigationController(rootViewController: banksListVC)
+    window?.rootViewController = navigationController
+    window?.makeKeyAndVisible()
+
     return true
   }
 
